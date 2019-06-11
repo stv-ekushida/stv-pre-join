@@ -15,6 +15,7 @@
 		070E67FF22ABF5E200FE22FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E67FE22ABF5E200FE22FD /* main.m */; };
 		070E680922ABF5E200FE22FD /* stv_pre_joinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E680822ABF5E200FE22FD /* stv_pre_joinTests.m */; };
 		070E681422ABF5E200FE22FD /* stv_pre_joinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E681322ABF5E200FE22FD /* stv_pre_joinUITests.m */; };
+		070E682522AF909300FE22FD /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E682422AF909300FE22FD /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		070E680F22ABF5E200FE22FD /* stv-pre-joinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stv-pre-joinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		070E681322ABF5E200FE22FD /* stv_pre_joinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stv_pre_joinUITests.m; sourceTree = "<group>"; };
 		070E681522ABF5E200FE22FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070E682322AF909300FE22FD /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		070E682422AF909300FE22FD /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		070E67EE22ABF5DC00FE22FD /* stv-pre-join */ = {
 			isa = PBXGroup;
 			children = (
+				070E682322AF909300FE22FD /* Account.h */,
+				070E682422AF909300FE22FD /* Account.m */,
 				070E67EF22ABF5DC00FE22FD /* AppDelegate.h */,
 				070E67F022ABF5DC00FE22FD /* AppDelegate.m */,
 				070E67F222ABF5DC00FE22FD /* ViewController.h */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070E67F422ABF5DC00FE22FD /* ViewController.m in Sources */,
+				070E682522AF909300FE22FD /* Account.m in Sources */,
 				070E67FF22ABF5E200FE22FD /* main.m in Sources */,
 				070E67F122ABF5DC00FE22FD /* AppDelegate.m in Sources */,
 			);

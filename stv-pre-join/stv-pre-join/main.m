@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Account.h"
 
 void exam_1_1_1(void) {
     BOOL bValue = true;
@@ -94,11 +95,20 @@ void exam_1_1_3(void) {
     }
 }
 
+void exam_1_1_4(void) {
+    Account *account1 = [[Account alloc] initWithValues:@"Alice" year:17 gender:@"female" lang:@"English"];
+    [account1 sayHello];
+    
+    Account *account2 = [[Account alloc] initWithValues:@"Bob" year:20 gender:@"male" lang:@"French"];
+    [account2 sayHello];
+}
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         exam_1_1_1();
         exam_1_1_2();
         exam_1_1_3();
+        exam_1_1_4();
 
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
