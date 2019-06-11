@@ -42,10 +42,63 @@ void exam_1_1_2(void) {
     }
 }
 
+void exam_1_1_3(void) {
+    NSArray *array = [[NSArray alloc] initWithObjects: @"foo", @"bar", @"buz", nil];
+
+    // if文
+    for(int i = 0; i < [array count]; i++) {
+        if(i == 1) {
+            NSString *v = [array objectAtIndex: i];
+            NSLog(@"array[1] = %s", [v UTF8String]);
+        }
+    }
+
+    // if-else文
+    for(int i = 0; i < [array count]; i++) {
+        NSString *v = [array objectAtIndex: i];
+        if(i % 2 == 0) {
+            NSLog(@"even: %s", [v UTF8String]);
+        }
+        else {
+            NSLog(@"odd:  %s", [v UTF8String]);
+        }
+    }
+
+    // 三項演算子
+    for(int i = 0; i < [array count]; i++) {
+        NSString *v = [array objectAtIndex: i];
+        NSLog(@"ternary: %s", i % 3 == 2 ? "FizzBuzz" : [v UTF8String]);
+    }
+
+    // for文
+    for(int i = 0; i < [array count]; i++) {
+        NSString *v = [array objectAtIndex: i];
+        NSLog(@"for: %d -> %s", i, [v UTF8String]);
+    }
+
+    // 高速列挙構文
+    for(NSString *v in array) {
+        NSLog(@"fast: %s", [v UTF8String]);
+    }
+
+    // switch文
+    for(int i = 0; i < [array count]; i++) {
+        NSString *v = [array objectAtIndex: i];
+        switch (i) {
+            case 1:
+                NSLog(@"switch: %d -> %s", i, [v UTF8String]);
+                break;
+            default:
+                break;
+        }
+    }
+}
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         exam_1_1_1();
         exam_1_1_2();
+        exam_1_1_3();
 
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
